@@ -1,0 +1,354 @@
+:root {
+  --clr-bg: hsl(0, 0%, 13%);
+  --clr-teal: hsl(176, 77%, 92%);
+  --clr-blue:	hsl(202, 100%, 90%);
+  --clr-purple:	hsl(229, 100%, 91%);
+  --clr-pink:	hsl(260, 100%, 93%);
+}
+
+body {
+  background-color: #000;
+  background-image: url('../imagesSub/subpageBackground.svg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  margin-top: 20%;
+  padding: 0;
+}
+
+/*UNIVERSAL STYLING*/
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75em;
+}
+
+p, a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+.media-flex_container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.flex_container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+
+/*Colors*/
+.teal-bg {
+  background-color: var(--clr-teal);
+}
+
+.blue-bg {
+  background-color: var(--clr-blue);
+}
+
+.purple-bg {
+  background-color: var(--clr-purple);
+}
+
+.pink-bg {
+  background-color: var(--clr-pink);
+}
+
+/*Resume Text*/
+h1 {
+  color: rgba(255, 255, 255, .15);
+  margin-top: -20%;
+  font-size: 20em;
+  position: fixed;
+  z-index: -1;
+}
+
+/*Section Container*/
+#project1, #project2 {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  background-image: url('../imagesSub/subpagePhoneBackground.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  aspect-ratio: 9 / 19.5;
+  border-radius: 2.5em;
+  border: 5px solid #444;
+  min-height: 925px;
+  max-height: 1000px;
+  box-shadow:
+    0 0 20px 7px rgba(255, 255, 255, .3);
+}
+
+#project2 {
+  margin-top: 15vh;
+}
+
+/*************************/
+/*proj*/
+
+.project_container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.project-bottom_container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.project-bottom-bound {
+  width: 7.5vw;
+}
+
+/*proj Header*/
+.flex-proj-top-1 {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  text-align: left;
+  padding-left: 10%;
+  margin-bottom: 5%;
+}
+
+.project-content-1 h2 {
+  color: #fff;
+  font-weight: 400;
+}
+
+.flex-proj-bound {
+  width: 20%;
+}
+
+/*proj Content*/
+.proj-bound_container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.flex-proj-top-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.project-content-2 {
+  width: 85%;
+}
+
+.flex-proj-1 {
+  background-color: var(--clr-purple);
+  padding: 7.5% 5%;
+  padding-right: 15%;
+  box-shadow:
+    0px 5px 5px 1px rgba(200, 200, 200, .5);
+}
+
+.flex-proj-1 .proj-img img {
+  width: 80%;
+}
+
+.flex-proj-bound {
+  width: 7.5%;
+}
+
+.flex-proj-1 .proj-visit a {
+  background-color: #fff;
+  border-radius: 1em;
+  color: #000;
+  font-weight: 600;
+  padding: 15% 45%;
+  text-decoration: none;
+  transition: 300ms ease;
+  box-shadow:
+    0 0 2px 0 rgba(0, 0, 0, .3);
+}
+
+.flex-proj-1 .proj-visit a:hover {
+  box-shadow:
+    0 3px 2px 1px rgba(0, 0, 0, .3);
+}
+
+.flex-proj-1{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-proj {
+  border-radius: 2em;
+  transition: 300ms;
+}
+
+.flex-proj-1:hover {
+  background-color: hsl(229, 100%, 88%);
+  cursor: auto;
+  transform: scale(1.01);
+  box-shadow:
+    0 2.5px 10px 2.5px rgba(200, 200, 200, .5);
+}
+
+.proj-text_container {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  background-color: var(--clr-bg);
+  border-radius: 1em;
+  color: #fff;
+  width: 100%;
+  transition: 300ms ease;
+}
+
+.proj-text_container:hover {
+  background-color: #555;
+  cursor: auto;
+  transform: scale(1.01);
+  box-shadow:
+    0 0 10px 2.5px rgba(0, 0, 0, .2);
+}
+
+.proj-text_container:first-child {
+  margin-bottom: 10%;
+}
+
+/*Text*/
+.proj-header, .proj-text {
+  margin: 0 5%;
+}
+
+.proj-header h2 {
+  font-weight: 500;
+}
+
+.proj-text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: .85em;
+  letter-spacing: .5px;
+  padding-bottom: 2.5%;
+}
+
+
+/******************************************/
+/*DOWNLOAD*/
+.download_container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  background-image: url('../imagesSub/downloadBackground.svg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 20px solid #aaa;
+  border-bottom: 20px solid #aaa;
+  color: #fff;
+  height: 60vh;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+  text-align: center;
+  width: 100%;
+}
+
+.download-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.download-bound {
+  height: 20%;
+}
+
+.download-text {
+  font-size: 2em;
+}
+
+.download-link_container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.download-content-inner {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 15%;
+  text-shadow: 
+    0 2px 5px #000;
+}
+
+.download-link {
+  background-color: var(--clr-teal);
+  border-radius: .5em;
+  padding: .8em 2em;
+  transition: 200ms ease;
+}
+
+.download-link a {
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.download-link:hover {
+  font-size: 1.01em;
+  box-shadow:
+    0 0 6px 2.5px rgba(155, 155, 155, .5);
+}
+
+
+/********************************************/
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1200px) {
+  .media-flex_container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+  /*Download*/
+  .download-text {
+    font-size: 1.4em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .download-content {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #project1, #project2 {
+    min-height: 810px;
+    max-width: 450px;
+    min-width: 320px;
+    width: 95vw;
+  }
+}
